@@ -3,32 +3,33 @@
   <head>
     <title>__..:FAAN|ROSS:..__</title>
     <style>
-      html, body {
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-      }
-
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-
-      @media (max-width: 799px) {
         img {
-          content: url("small.jpg");
+          width: 100%;
         }
-      }
-
-      @media (min-width: 800px) {
-        img {
-          content: url("large.jpg");
+      
+        @media (min-width: 500px) {
+          img.desktop {
+            display: block;
+          }
+      
+          img.mobile {
+            display: none;
+          }
         }
-      }
-    </style>
+      
+        @media (max-width: 500px) {
+          img.desktop {
+            display: none;
+          }
+      
+          img.mobile {
+            display: block;
+          }
+        }
+      </style>
   </head>
   <body>
-    <img src="large.jpg" alt="image">
+    <img src="large.jpg" class="desktop" />
+    <img src="small.jpg" class="mobile" />
   </body>
 </html>
