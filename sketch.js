@@ -1,4 +1,4 @@
-let y1 = 0; // y position of image01
+let y1 = 0; // y position of image0
 let y2 = 0; // y position of image02
 let easing = 0.05;
 let amplitude = 20;
