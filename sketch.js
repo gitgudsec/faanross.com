@@ -1,4 +1,4 @@
-let y1 = 0; // y position of image0
+let y1 = 0; // y position of image01
 let y2 = 0; // y position of image02
 let easing = 0.05;
 let amplitude = 20;
@@ -23,9 +23,10 @@ function draw() {
   // Display image01 as the background image
   image(img1, 0, y1, width, height);
   image(img1, 0, y1 + height, width, height);
-  
+
+
   // Increment y1 to move image01 upwards
-  y1 -= 0.1;
+  y1 -= random(-0.3, 0.7);
   
   // If image has moved completely off the screen, reset y1 to 0
   if (y1 <= -height) {
