@@ -1,1 +1,0 @@
-# faanross.com
