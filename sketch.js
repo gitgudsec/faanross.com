@@ -5,7 +5,7 @@ let period = 7000;
 
 function preload() {
   // Load the images
-  image01 = loadImage('image01.png');
+  image01 = loadImage('image01.jpg');
   image02 = loadImage('image02.png');
 }
 
