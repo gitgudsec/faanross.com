@@ -35,7 +35,7 @@ function setup() {
 function draw() {
   let img = ptero[counter];
   timer++; // increment the timer
-  if (timer > 5) { // if the timer has reached 30 (30 * 1/frameRate() = 0.3 seconds)
+  if (timer > 3) { // if the timer has reached 30 (30 * 1/frameRate() = 0.3 seconds)
     timer = 0; // reset the timer
     counter++; // increment the counter
     if (counter > 3) { // if the counter has reached 8 (the last index in the array)
